@@ -6,7 +6,7 @@ This activity is designed to give you hands-on experience with the Actions frame
 
 ## Step-by-Step Guide for Orders
 
-Here is a practical, step-by-step guide to creating a **Modify** action that updates an order.
+Here is a practical, step-by-step guide to creating a **Modify** action that updates an order. I've also included an extremely detailed scribe document for you to utilize here [Create and Configure Action Types and Python Functions in Ontology](https://scribehow.com/viewer/Create_and_Configure_Action_Types_and_Python_Functions_in_Ontology__559incNdT5ugRId7m7tzGA)
 
 **Step 1: Enabling Edits on the Order Object Type**
 
@@ -109,3 +109,4 @@ This section provides an opportunity to tie together all the concepts from the p
 **Hint**: You will need to use **Pipeline Builder** to create a new dataset that acts as a bridge. A key step is to transform the raw `uri_path` from the log files to extract the CIK. You will also need to create a new **Company** object type backed by your mapping CSV. Your final pipeline should connect the **Car** and **Company** objects via a new **Manufactures** link type, joining on the car's make (which you would extract from the `productName` field) and the company's CIK.
 
 This demonstrates how the Ontology can be progressively enriched, transforming a simple **Company** object into a hub for related financial information and showcasing the power of Foundry's "closed-loop" system.
+
